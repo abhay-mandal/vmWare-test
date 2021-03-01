@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-##Install dependencies
+## Install dependencies
 cd into ui/vmware-app
 npm i
 
