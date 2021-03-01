@@ -1,0 +1,163 @@
+$color-white : #fff;
+
+
+.loginDiv>div.loginBtn {
+	margin-top: 23px;
+	margin-bottom: 13px !important;
+}
+
+.row.forgotDiv {
+	margin: 0;
+}
+
+.PassInp {
+	margin-top: 19px;
+}
+
+.eye-icon .btn{
+	color: $color-white;
+	font-weight: 300;
+	padding: 0;
+	font-size: 22px;
+	float: right;
+    margin-top: -1.5em;
+    line-height: 22px;
+}
+
+button:focus {
+	outline: none;
+}
+
+-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: transparent;
+}
+
+-webkit-scrollbar-track {
+	background-color: transparent
+}
+
+-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #a6a6a6;
+}
+
+svg {
+	width: 24px;
+	height: 24px;
+}
+
+.ett-inpt {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.ett-inpt:focus {
+	outline: none;
+}
+
+label {
+	font-size: 13px;
+	color: #FECB37;
+	font-weight: 300;
+	margin-bottom: 0.18rem;
+	line-height: 12px
+}
+
+.blue {
+	position: relative
+}
+
+.blue::-webkit-scrollbar {
+	display: none;
+}
+
+.blue::-webkit-scrollbar-thumb {
+	background-color: #FF0000;
+}
+
+.blue::-webkit-scrollbar {
+	width: 0px !important;
+	height: 0px;
+	background-color: transparent;
+}
+
+.blue .aside-Left-width {
+	background-color: #22264C;
+	padding: 6rem 2.6rem 1rem 2.63rem;
+	box-shadow: 0 0 25px #0000004D;
+	position: relative;
+	height: calc(100vh);
+	overflow: auto;
+}
+
+svg.ett-icon.icon-warning {
+	width: 30px;
+	height: 30px;
+}
+
+.aside-Left-width {
+	width: 38%;
+	max-width: 437px;
+	// margin-left: 0.5rem;
+	padding-top: 2%;
+}
+
+.aside-Left-width::-webkit-scrollbar {
+	display: none !important;
+}
+
+div.container-widthSet.mx-5.px-4.pt-3 {
+	padding-left: 1.05rem !important;
+	padding-right: 0rem !important;
+	padding-top: .66rem !important;
+}
+
+.login-header.mb-4 {
+	margin-bottom: 1.8rem !important
+}
+
+.headfont {
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: .76em;
+}
+
+.aside-Button {
+	background-color: #FF6F20;
+	height: 50px;
+	width: 100%;
+	border: 0px;
+	border-radius: 10px;
+	color: #ffff;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+}
+
+.btn:hover,
+ .btn:disabled {
+	color: #fff;
+}
+
+.form-control:focus {
+	box-shadow: none
+}
+
+.right-Section {
+	padding-left: 23px;
+}
+
+.right-Section span {
+	font-family: "Lato";
+	color: #333;
+}
+
+textarea {
+	resize: none;
+	height: 80px
+}

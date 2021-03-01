@@ -1,0 +1,50 @@
+<div class="row m-0">
+    <div class="col-md-12 main-wrap">
+        <div class="row blue">
+            <div class="col-md-5 aside-Left-width">
+                <h5 class="headfont text-white">{{'Login' | translate }}</h5>
+
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin()" autocomplete="off">
+                    <div class="loginDiv">
+                        <div class="UserName mb-21">
+                            <label class="labelfont"> {{'Enter email' | translate}} </label>
+                            <input class="ett-inpt h-auto bg-transparent text-light w-100 border-0 p-0" type="email"
+                                required autocomplete="off" formControlName="userId"
+                                placeholder="{{'example@123.com' | translate }}">
+                            <div *ngIf="form.userId.touched && form.userId.errors">
+                                <label class="text-danger" *ngIf="form.userId.hasError('required')">
+                                    Email is required
+                                </label>
+                                <div class="text-danger" *ngIf="form.userId.errors.email">
+                                    Enter valid Email
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="PassInp mb-21">
+                            <label class="d-block"> {{'Enter password' | translate }} </label>
+                            <input class="ett-inpt h-auto bg-transparent text-light w-100 border-0 p-0 form-control"
+                                required autocomplete="off" type="password" formControlName="password"
+                                placeholder="{{'example@1234' | translate }}" [type]="'password'">
+                            <div *ngIf="form.password.touched && form.password.errors">
+                                <label class="text-danger" *ngIf="form.password.hasError('required')">
+                                    Password is required
+                                </label>
+                                <label class="text-danger" *ngIf="form.password.errors.minlength">
+                                    Password should contain atleast 8 character
+                                </label>
+                            </div>
+                        </div>
+                        <div class="loginBtn ">
+                            <button type="button" class="btn aside-Button w-100"
+                                [disabled]="loginForm.invalid" type="submit">{{'Login' | translate }}
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-7  mr-0 pr-0 right-Section" id="rightSection ">
+
+            </div>
+        </div>
+    </div>
+</div>

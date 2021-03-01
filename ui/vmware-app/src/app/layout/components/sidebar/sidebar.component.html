@@ -1,0 +1,13 @@
+<ul class="navbar-nav pt-5 pl-3">
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)" (click)="toggleSidebar()"><i
+                class="fa fa-align-left"></i> <span *ngIf="!isCollapsed">Menu</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)" routerLink="/home/about">
+            <i class="fa fa-pencil-square-o"></i>
+            <span *ngIf="!isCollapsed">About </span>
+        </a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)" routerLink="/login">
+            <i class="fa fa-pencil-square-o"></i>
+            <span *ngIf="!isCollapsed">Logout </span>
+        </a></li>
+</ul>

@@ -1,0 +1,17 @@
+
+.nav-item{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.nav-link{
+    color: #9B9B9B;
+    font-size: 13px;
+    position: relative; 
+    padding-left: 38px;
+    min-height: 40px;
+}
+.nav-link > i{
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+}

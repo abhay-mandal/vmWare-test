@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="p-0 " [ngClass]="isCollapsed ? 'collapsed col-md-1' : 'col-md-2'">
+          <aside class="p-0 left-sidebar">
+              <app-sidebar (onClickCollapsed)="toggleCollapsed($event)"></app-sidebar>
+          </aside>
+      </div>
+
+      <div [ngClass]="isCollapsed ? 'col-md-11 expend-main' : 'col-md-10'">
+          <header>
+              <app-header></app-header>
+          </header>
+
+          <div class="row main-wrapper pl-4 pr-2">
+              <div class="col-md-12 mt-2">
+                  <router-outlet></router-outlet>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "cd65846e-6612-4c84-aba6-d69589eda979",
+		"name": "VMWare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 29,\n    \"name\": \"Abhay\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Get All Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "3. Get Employee By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/employee/6"
+			},
+			"response": []
+		},
+		{
+			"name": "4. Upate Employee By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 28,\n    \"name\": \"Nishant\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/employee/6"
+			},
+			"response": []
+		},
+		{
+			"name": "5. Delete Employee By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/employee/6"
+			},
+			"response": []
+		},
+		{
+			"name": "6. Bulk Upload Employee Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/nishantkumar/Downloads/test.txt"
+						}
+					]
+				},
+				"url": "localhost:8080/api/employee/"
+			},
+			"response": []
+		},
+		{
+			"name": "7. Get Bulk upload job Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/bulk/edc83f85-5821-465d-b3db-fee4a0383953"
+			},
+			"response": []
+		},
+		{
+			"name": "8. Re trigger Bulk upload job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/bulk/edc83f85-5821-465d-b3db-fee4a0383953"
+			},
+			"response": []
+		}
+	]
+}
